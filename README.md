@@ -13,6 +13,11 @@ etc. Run <code>mvn clean install</code>before going any further. You will see th
 See the code comments for thoughts on further testing. The setup was tested with 
 a fresh clone and a fresh <code>.m2</code> directory.
 
+One other essential thing to consider for production-readiness is observability. Adding a 
+dependency to <code>spring-boot-starter-actuator</code> would privide a set of pre-built 
+end-points for providing the requirement. Given the time budget, not a concern for this challenge,
+but it needs to be considered for any production system.
+
 All the versions of dependencies are defined as properties near the top of the POM, so if 
 you have other non-conflicting versions that you'd like to use, you can just update the versions
 there.
