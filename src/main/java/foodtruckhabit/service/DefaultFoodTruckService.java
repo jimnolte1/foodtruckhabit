@@ -39,6 +39,7 @@ public class DefaultFoodTruckService implements FoodTruckService {
     @Override
     public List<FoodTruck> getFoodTrucks() {
 
+        // With more time in the budget, this could be made more clean...
         if (foodTrucks.isEmpty()) {
             synchronized (foodTrucks) {
                 foodTrucks = populateFoodTrucks();

@@ -22,8 +22,6 @@ public class FoodTruck {
 	private String approved;
 	private String location;
 
-	public FoodTruck() {
-	}
 	public FoodTruck(MobileFoodFacilityPermit permit) {
 		this.address = permit.getAddress();
 		this.applicant = permit.getApplicant();

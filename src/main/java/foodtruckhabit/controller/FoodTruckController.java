@@ -20,15 +20,13 @@ public class FoodTruckController {
     @GetMapping
     public List<FoodTruck> getAllFoodTrucks() {
 
-        List<FoodTruck> foodTrucks = service.getFoodTrucks();
-        return foodTrucks;
+        return service.getFoodTrucks();
     }
 
     @GetMapping("/{foodItem}")
     public List<FoodTruck> getFoodTrucksServing(@PathVariable String foodItem) {
 
-        List<FoodTruck> foodTrucks = service.getFoodTrucksServing(foodItem);
-        return foodTrucks;
+        return service.getFoodTrucksServing(foodItem);
     }
 
 }
