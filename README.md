@@ -1,6 +1,8 @@
 # foodtruckhabit
 Repository for challenge assignment
 
+Please read Foodtruck Challenge.pdf for a description of the challenge.
+
 To get started, clone this repository at https://github.com/jimnolte1/foodtruckhabit.git.
 
 This challenge assignment uses Project Lombok. After cloning and pulling it into 
