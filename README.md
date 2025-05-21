@@ -14,7 +14,15 @@ accordingly.
 This repo uses Maven as a build tool, so you'll need that installed to resolve 
 and download all dependent distributions. Run <code>mvn clean install</code>before 
 going any further. You will see three passing tests. See the code comments for 
-thoughts on further testing.  
+thoughts on further testing. These tests are by no means comprehensive; they are there 
+to make a point that no system is production-ready until it has a full suite of 
+automated tests that can be run by individual developers on-demand, when a change to 
+the system is committed, or when a distribution is being built. If this were a true 
+production system, it should have unit tests down to the individual component level, 
+integration tests, and functional tests for real-world usage scenarios. Also, if this 
+were a production system, the first thing I would do is pay down the technical debt in 
+terms of lack of automated tests and build up a large test suite before I accepted any 
+feature enhancements.   
 
 All the versions of dependencies are defined as properties near the top of the POM, 
 so if you have other non-conflicting versions that you'd like to use, you can just 
